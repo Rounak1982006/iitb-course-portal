@@ -1,0 +1,17 @@
+# React
+regportal/node_modules/
+regportal/build/
+
+# Django
+iitb_backend/venv/
+iitb_backend/__pycache__/
+iitb_backend/**/__pycache__/
+iitb_backend/db.sqlite3
+iitb_backend/**/*.pyc
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
