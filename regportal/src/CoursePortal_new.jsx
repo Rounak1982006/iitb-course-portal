@@ -504,7 +504,7 @@ export default function App() {
                 ["Department", "dept", "text", "Dept. of ..."],
                 ["Duration", "duration", "text", "e.g. 16 weeks"],
                 ["Schedule", "schedule", "text", "Mon/Wed, 9–10 AM"],
-                ["Seat Limit", "seats", "number", "50"],
+                ["Seat Limit", "total_seats", "number", "50"],
               ].map(([lbl, key, type, ph]) => (
                 <div key={key}>
                   <label style={S.label}>{lbl}</label>
@@ -524,7 +524,7 @@ export default function App() {
               </select>
               <label style={S.label}>Description</label>
               <textarea style={{ ...S.inp, minHeight: 75, resize: "vertical" }} placeholder="Course description..."
-                value={courseForm.desc} onChange={e => setCourseForm({ ...courseForm, desc: e.target.value })} />
+                value={courseForm.description} onChange={e => setCourseForm({ ...courseForm, description: e.target.value })} />
               <div style={{ display: "flex", gap: 10, marginTop: 4 }}>
                 <button style={{ ...S.btnPrimary, background: "#f3f4f6", color: "#374151", flex: 1 }} onClick={() => setCourseModal(null)}>Cancel</button>
                 <button style={{ ...S.btnPrimary, flex: 2 }} onClick={saveCourse}>
